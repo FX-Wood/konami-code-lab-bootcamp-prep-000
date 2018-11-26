@@ -21,11 +21,10 @@ function init() {
       console.log(e.key)
       if (codes[index] === e.key) {
         index++
-        if (index === 10){
-          alert("It's an older code, sir-- but it checks out.")
-        }
       } else {
         index = 0
+      } if (index === 10){
+        alert("It's an older code, sir-- but it checks out.")
       } console.log(`the index is at ${index}`)
   }
   document.body.addEventListener('keydown', konamiKeyHandler)
