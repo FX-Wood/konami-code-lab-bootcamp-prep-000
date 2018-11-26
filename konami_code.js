@@ -12,7 +12,6 @@ const codes = [
 ];
 
 let index = 0
-let ignorer = 0
 
 function init() {
   const outputTarget = document.querySelector('#output-pane')
@@ -27,7 +26,7 @@ function init() {
         }
       } else {
         index = 0
-      }
+      } console.log(`the index is at ${index}`)
   }
   document.body.addEventListener('keydown', konamiKeyHandler)
 }
