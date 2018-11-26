@@ -35,8 +35,7 @@ function init() {
       ignorer++
       console.log(ignorer%2)
     }
+    console.log(`index is at: ${index}`)
   }
   document.body.addEventListener('keydown', konamiKeyHandler)
 }
-
-init()
