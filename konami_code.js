@@ -18,8 +18,6 @@ function init() {
   const outputTarget = document.querySelector('#output-pane')
 
   function konamiKeyHandler(e) {
-    if (ignorer%2 != 0) {
-      ignorer++
       outputTarget.innerHTML = `${e.key}`;
       console.log(e.key)
       if (codes[index] === e.key) {
@@ -30,12 +28,6 @@ function init() {
       } else {
         index = 0
       }
-    } else {
-      console.log("I'm ignoring you.")
-      ignorer++
-      console.log(ignorer%2)
-    }
-    console.log(`index is at: ${index}`)
   }
   document.body.addEventListener('keydown', konamiKeyHandler)
 }
