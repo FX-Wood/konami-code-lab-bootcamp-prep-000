@@ -23,7 +23,6 @@ function init() {
         index++
         if (index === 10){
           alert("It's an older code, sir-- but it checks out.")
-        }
       } else {
         index = 0
       } console.log(`the index is at ${index}`)
